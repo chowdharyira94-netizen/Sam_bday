@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Things I Like About You 💙</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Quicksand',sans-serif;
+}
+
+body{
+min-height:100vh;
+padding:30px 15px;
+
+background:linear-gradient(
+180deg,
+#ffb6d9,
+#f7c6ff,
+#d7c5ff
+);
+
+overflow-x:hidden;
+}
+
+h1{
+text-align:center;
+color:white;
+font-size:42px;
+margin-bottom:35px;
+text-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.cards{
+max-width:900px;
+margin:auto;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:20px;
+justify-items:center;
+}
+
+.flip-card{
+width:170px;
+height:250px;
+perspective:1000px;
+cursor:pointer;
+}
+
+.special{
+width:190px;
+height:270px;
+}
+
+.flip-inner{
+position:relative;
+width:100%;
+height:100%;
+transition:transform .8s;
+transform-style:preserve-3d;
+}
+
+.flip-card.flipped .flip-inner{
+transform:rotateY(180deg);
+}
+
+.front,
+.back{
+position:absolute;
+width:100%;
+height:100%;
+border-radius:20px;
+
+backface-visibility:hidden;
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+padding:15px;
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.front{
+font-size:28px;
+font-weight:700;
+color:#5a4458;
+}
+
+.front span{
+margin-top:10px;
+font-size:22px;
+}
+
+.back{
+transform:rotateY(180deg);
+font-size:24px;
+font-weight:700;
+color:#4d3c4f;
+}
+
+.back small{
+font-size:14px;
+margin-top:8px;
+}
+
+/* pastel colors */
+
+.c1 .front,.c1 .back{background:#ffd6ea;}
+.c2 .front,.c2 .back{background:#ffe0ef;}
+.c3 .front,.c3 .back{background:#ffd9d9;}
+.c4 .front,.c4 .back{background:#f5d7ff;}
+.c5 .front,.c5 .back{background:#ffd4e5;}
+.c6 .front,.c6 .back{background:#ffdff4;}
+.c7 .front,.c7 .back{background:#ffdde1;}
+.c8 .front,.c8 .back{background:#f7d9ec;}
+.c9 .front,.c9 .back{background:#ead8ff;}
+.c10 .front,.c10 .back{background:#ffcfe8;}
+.c11 .front,.c11 .back{background:#e3d1ff;}
+
+.ending{
+text-align:center;
+margin-top:40px;
+
+font-size:24px;
+font-weight:700;
+color:white;
+
+opacity:0;
+visibility:hidden;
+
+transition:.8s;
+}
+
+.ending.show{
+opacity:1;
+visibility:visible;
+}
+
+.button-wrap{
+text-align:center;
+margin-top:25px;
+
+opacity:0;
+visibility:hidden;
+
+transition:.8s;
+}
+
+.button-wrap.show{
+opacity:1;
+visibility:visible;
+}
+
+.btn{
+display:inline-block;
+
+padding:15px 35px;
+
+background:white;
+color:#ff5ea8;
+
+text-decoration:none;
+font-size:22px;
+font-weight:700;
+
+border-radius:999px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+@media(max-width:600px){
+
+h1{
+font-size:32px;
+}
+
+.flip-card{
+width:150px;
+height:220px;
+}
+
+.special{
+width:170px;
+height:240px;
+}
+
+.back{
+font-size:20px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<h1>Things I Like About You 💙</h1>
+
+<div class="cards">
+
+<div class="flip-card c1">
+<div class="flip-inner">
+<div class="front">💌<span>Tap Me</span></div>
+<div class="back">🌝<br>Your smile</div>
+</div>
+</div>
+
+<div class="flip-card c2">
+<div class="flip-inner">
+<div class="front">💌<span>Tap Me</span></div>
+<div class="back">😌<br>Your voice</div>
+</div>
+</div>
+
+<div class="flip-card c3">
+<div class="flip-inner">
+<div class="front">💌<span>Tap Me</span></div>
+<div class="back">🎀<br>Your letters</div>
+</div>
+</div>
+
+<div class="flip-card c4">
+<div class="flip-inner">
+<div class="front">💌<span>Tap Me</span></div>
+<div class="back">
+😏<br>
+Tumhara "huh" bolna
+<small>(COPYCAT)</small>
+</div>
+</div>
+</div>
+
+<div class="flip-card c5">
+<div class="flip-inner">
+<div class="front">💌<span>Tap Me</span></div>
+<div class="back">😋<br>Tumse call par baat Krna</div>
+</div>
+</div>
+
+<div class="flip-card c6">
+<div class="flip-inner">
+<div class="front">💌<span>Tap Me</span></div>
+<div class="back">😗<br>Tumhare stickers banana</div>
+</div>
+</div>
+
+<div class="flip-card c7">
+<div class="flip-inner">
+<div class="front">💌<span>Tap Me</span></div>
+<div class="back">😂<br>Tumhara random bakwas</div>
+</div>
+</div>
+
+<div class="flip-card c8">
+<div class="flip-inner">
+<div class="front">💌<span>Tap Me</span></div>
+<div class="back">🤨<br>Tumhara drama</div>
+</div>
+</div>
+
+<div class="flip-card c9">
+<div class="flip-inner">
+<div class="front">💌<span>Tap Me</span></div>
+<div class="back">🎮<br>Tumhare sath ff khelna</div>
+</div>
+</div>
+
+<div class="flip-card c10">
+<div class="flip-inner">
+<div class="front">💌<span>Tap Me</span></div>
+<div class="back">😝<br>Tumhe pareshan Krna</div>
+</div>
+</div>
+
+<div class="flip-card c11 special">
+<div class="flip-inner">
+<div class="front">💌<span>Tap Me</span></div>
+<div class="back">
+Tum being you 🎀🤌🏻
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="ending" id="ending">
+There are more...<br>
+but website ki storage bhi hoti hai 😔✋
+</div>
+
+<div class="button-wrap" id="continueBtn">
+<a href="page4.html" class="btn">
+🌸 Continue →
+</a>
+</div>
+
+<script>
+
+let flippedCount = 0;
+
+document.querySelectorAll(".flip-card").forEach(card=>{
+
+card.addEventListener("click",()=>{
+
+if(!card.classList.contains("flipped")){
+
+card.classList.add("flipped");
+flippedCount++;
+
+if(flippedCount===11){
+
+setTimeout(()=>{
+
+document.getElementById("ending")
+.classList.add("show");
+
+},700);
+
+setTimeout(()=>{
+
+document.getElementById("continueBtn")
+.classList.add("show");
+
+},1500);
+
+}
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
